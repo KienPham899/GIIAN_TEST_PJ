@@ -484,4 +484,63 @@ body {
   color: white;
 }
 /* end flashSale item */
-/* ENDFLASH SALE SALE */
+/* END FLASH SALE STYLE */
+
+/* PRODUCT CONTAINER  */
+.product-wrapper-bg {
+  margin-top: 40px;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, white, transparent);
+}
+.product-container {
+  margin-top: 40px;
+}
+.product-filter__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.product-filter__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.product-filter__link {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+
+  padding: 10px 50px;
+  background: #f3f3f3;
+  color: #a14851;
+  font-size: 24px;
+  font-weight: 500;
+}
+.product-filter__link:hover {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+
+  padding: 10px 50px;
+  background: #a14851;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* END PRODUCT CONTAINER  */
