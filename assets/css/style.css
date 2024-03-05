@@ -8,19 +8,19 @@ body {
   background: #fbefea;
 }
 .wrapper {
-  width: 85%;
+  width: 1620px;
   margin-inline: auto;
 }
 /* END GOLBAL STYLE */
 
 /* HEADER STYLE */
 .header {
-  margin-top: 15px;
+  margin-top: 20px;
   background: #a14851;
 }
 
 .header-logo {
-  height: 145px;
+  height: 140px;
   background: #a14851;
 }
 .header-wrap {
@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 16px;
 }
 .header-nav-wrap {
   display: flex;
@@ -81,7 +82,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px 0 0;
-  gap: 12px;
+  gap: 14px;
 }
 
 .search-bar-with-icon {
