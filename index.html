@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GIIAN.vn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -71,10 +77,7 @@
     <div class="wrapper">
       <!-- BANNER -->
       <div class="banner">
-        <img
-          src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/428655881_795264635965844_8358822399880936577_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeH9yF8XsBbS1NzhcSMDqAbHnU2pynrpJBKdTanKeukkEvca8fJGRWusPXQwJxQJYDuL1XUPOOo84YgEbOEI7UYJ&_nc_ohc=mWfOsbHujc4AX-Ncd35&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfAhniEP69B9tpS4bfGuxZuI4GCa8qaZCFa7E9LfpbfqOQ&oe=65E5A02C"
-          class="banner-image"
-        />
+        <img src="./assets/img/banner.png" class="banner-image" />
       </div>
       <!-- END BANNER -->
 
@@ -83,41 +86,52 @@
         <ul class="upsale-opt__list">
           <li class="upsale-opt__item">
             <a href="#" class="upsale-opt__link"
-              ><img src="./assets/img/clock-icon.svg" class="upsale-opt-icon" />
+              ><img
+                src="./assets/img/goldenhour-icon.png"
+                class="upsale-opt-icon"
+              />
               Khung <br />giờ vàng
             </a>
           </li>
           <li class="upsale-opt__item">
             <a href="#" class="upsale-opt__link"
-              ><img src="./assets/img/clock-icon.svg" class="upsale-opt-icon" />
+              ><img
+                src="./assets/img/flashsale-icon.png"
+                class="upsale-opt-icon"
+              />
               flash<br />sale
             </a>
           </li>
           <li class="upsale-opt__item">
             <a href="#" class="upsale-opt__link"
-              ><img src="./assets/img/clock-icon.svg" class="upsale-opt-icon" />
+              ><img
+                src="./assets/img/freeship-icon.png"
+                class="upsale-opt-icon"
+              />
               Miễn phí<br />ship
             </a>
           </li>
           <li class="upsale-opt__item">
             <a href="#" class="upsale-opt__link"
-              ><img src="./assets/img/clock-icon.svg" class="upsale-opt-icon" />
+              ><img
+                src="./assets/img/coupon-icon.png"
+                class="upsale-opt-icon"
+              />
               Mã <br />giảm giá
             </a>
           </li>
           <li class="upsale-opt__item">
             <a href="#" class="upsale-opt__link"
-              ><img src="./assets/img/clock-icon.svg" class="upsale-opt-icon" />
+              ><img
+                src="./assets/img/logingift-icon.png"
+                class="upsale-opt-icon"
+              />
               ĐĂng nhập <br />Nhận ưu đãi
             </a>
           </li>
           <li class="upsale-opt__item">
             <a href="#" class="upsale-opt__link"
-              ><img
-                src="./assets/img/clock-icon.svg"
-                width="100px"
-                class="upsale-opt-icon"
-              />
+              ><img src="./assets/img/gift-icon.png" class="upsale-opt-icon" />
               quà <br />tặng
             </a>
           </li>
@@ -440,25 +454,26 @@
             </li>
             <li class="product-filter__item">
               <a href="#" class="product-filter__link">
-                <img src="/?" />
+                <img src="/?" class="product-filter-icon" />
                 Nhập mới</a
               >
             </li>
             <li class="product-filter__item">
               <a href="#" class="product-filter__link">
-                <img src="/?" />
+                <img src="/?" class="product-filter-icon" />
                 Giảm Giá</a
               >
             </li>
             <li class="product-filter__item">
               <a href="#" class="product-filter__link">
-                <img src="/?" />
+                <img src="/?" class="product-filter-icon" />
                 Bán Chạy Nhất</a
               >
             </li>
           </ul>
         </div>
-        <div class="product-container">
+        <!-- PRODUCT ITEM CONTAINER -->
+        <div class="product-item-container">
           <ul class="product__List">
             <li class="product__item">
               <div class="product-item__card">
@@ -498,7 +513,7 @@
                         d="M2 9a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm8.707-5.293a1 1 0 0 0-1.414-1.414l-2 2a1 1 0 0 0 1.414 1.414l2-2Zm2.586 0a1 1 0 0 1 1.414-1.414l2 2a1 1 0 0 1-1.414 1.414l-2-2Z"
                       />
                     </svg>
-                    <!-- <img src="/?" > -->
+                    <!-- <img src="/?"  class="product-itemCard-purchase-add-img"> -->
                   </a>
                 </div>
               </div>
@@ -1149,69 +1164,68 @@
               </div>
             </li>
           </ul>
+          <!-- PAGINATION -->
+          <div class="pagination">
+            <div class="pagination-info">
+              <span class="pagination-total">Tổng số 4 trang</span>
+            </div>
+            <ul class="pagination-list">
+              <li class="pagination-item btn-prev">
+                <a href="#" class="pagination-link">
+                  <svg
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.20711 0.792893C5.59763 1.18342 5.59763 1.81658 5.20711 2.20711L2.41421 5L5.20711 7.79289C5.59763 8.18342 5.59763 8.81658 5.20711 9.20711C4.81658 9.59763 4.18342 9.59763 3.79289 9.20711L0.292893 5.70711C-0.0976311 5.31658 -0.0976311 4.68342 0.292893 4.29289L3.79289 0.792893C4.18342 0.402369 4.81658 0.402369 5.20711 0.792893Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link selected">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link"> 2 </a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">4</a>
+              </li>
+              <li class="pagination-item btn-next">
+                <a href="#" class="pagination-link">
+                  <svg
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.792893 0.792893C0.402369 1.18342 0.402369 1.81658 0.792893 2.20711L3.58579 5L0.792893 7.79289C0.402369 8.18342 0.402369 8.81658 0.792893 9.20711C1.18342 9.59763 1.81658 9.59763 2.20711 9.20711L5.70711 5.70711C6.09763 5.31658 6.09763 4.68342 5.70711 4.29289L2.20711 0.792893C1.81658 0.402369 1.18342 0.402369 0.792893 0.792893Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- END PAGINATION -->
         </div>
+        <!-- END PRODUCT ITEM CONTAINER -->
       </div>
       <!-- END PRODUCT CONTAINER-->
-
-      <!-- PAGINATION -->
-      <div class="pagination">
-        <div class="pagination-info">
-          <span class="pagination-total">Tổng số 4 trang</span>
-        </div>
-        <ul class="pagination-list">
-          <li class="pagination-item btn-prev">
-            <a href="#" class="pagination-link">
-              <svg
-                width="6"
-                height="10"
-                viewBox="0 0 6 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M5.20711 0.792893C5.59763 1.18342 5.59763 1.81658 5.20711 2.20711L2.41421 5L5.20711 7.79289C5.59763 8.18342 5.59763 8.81658 5.20711 9.20711C4.81658 9.59763 4.18342 9.59763 3.79289 9.20711L0.292893 5.70711C-0.0976311 5.31658 -0.0976311 4.68342 0.292893 4.29289L3.79289 0.792893C4.18342 0.402369 4.81658 0.402369 5.20711 0.792893Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link selected">1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link"> 2 </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">3</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">4</a>
-          </li>
-          <li class="pagination-item btn-next">
-            <a href="#" class="pagination-link">
-              <svg
-                width="6"
-                height="10"
-                viewBox="0 0 6 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.792893 0.792893C0.402369 1.18342 0.402369 1.81658 0.792893 2.20711L3.58579 5L0.792893 7.79289C0.402369 8.18342 0.402369 8.81658 0.792893 9.20711C1.18342 9.59763 1.81658 9.59763 2.20711 9.20711L5.70711 5.70711C6.09763 5.31658 6.09763 4.68342 5.70711 4.29289L2.20711 0.792893C1.81658 0.402369 1.18342 0.402369 0.792893 0.792893Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
-    <!-- END PAGINATION -->
-
     <!-- END WRAPPER -->
 
     <footer></footer>

@@ -1,7 +1,7 @@
 /* GLOBAL STYLE */
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat";
 }
 html,
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .header-logo {
-  height: 140px;
+  height: 136px;
   background: #ab3f4f;
 }
 .header-wrap {
@@ -58,7 +58,7 @@ body {
 .header-nav__link {
   text-decoration: none;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
 
   text-transform: uppercase;
@@ -142,8 +142,8 @@ body {
 .upsale-opt__list {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
 
-  margin-top: 22px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
@@ -154,15 +154,15 @@ body {
   align-items: center;
   border-radius: 20px;
   background-color: #ab3f4f;
-  padding: 24px 0 24px 0;
+  padding: 20px 0 20px 0;
   text-align: center;
 }
 .upsale-opt-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  padding: 0 24px 0 0;
+  /* height: 60px; */
+  padding: 0 18px 0 0;
 }
 .upsale-opt__link {
   display: flex;
@@ -172,7 +172,9 @@ body {
   text-decoration: none;
   text-align: left;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
+
   color: #fdeee9;
 }
 /* END OPTION UP SALE STYLE */
@@ -182,10 +184,10 @@ body {
   list-style-type: none;
   padding: 0;
 
-  margin-top: 15px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
+  grid-gap: 20px;
 }
 .voucher-card__item {
   display: flex;
@@ -245,8 +247,8 @@ body {
   justify-content: center;
   text-align: center;
 
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
   line-height: 0.8;
@@ -258,26 +260,29 @@ body {
   text-align: center;
   justify-content: center;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1;
   color: #fff;
 }
 .voucher-card-content {
   height: 100%;
-  padding: 10px;
+  padding: 20px;
 
   align-items: center;
   justify-content: center;
+  /* line-height: 1.5px; */
 }
 .card-content-header {
-  font-size: 16px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
 .sale-price-condition,
 .sale-program-title,
 .sale-program-status {
-  margin-top: 1px;
-  margin-bottom: 1px;
-  font-size: 14px;
+  margin: 0;
+  font-size: 12px;
+  padding: 0;
 }
 .sale-program-title {
   border: 1px solid #ab3f4f;
@@ -293,6 +298,7 @@ body {
 }
 
 .save-voucher-btn-shipping {
+  margin-top: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,11 +309,12 @@ body {
   border-radius: 20px;
   background: #4bbdc8;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
 .save-voucher-btn-price {
+  margin-top: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,13 +325,14 @@ body {
   border-radius: 20px;
   background: #ab3f4f;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
 .voucher-apply-condition {
   text-decoration: underline;
-  font-size: 10px;
+  font-size: 8px;
+  font-weight: bold;
   color: black;
 
   display: flex;
@@ -340,7 +348,7 @@ body {
   list-style-type: none;
   padding: 0;
 
-  margin-top: 22px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 16px;
@@ -360,7 +368,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 12px;
+  /* padding-right: 12px; */
   /* padding-left: -50px; */
   width: 100px;
 }
@@ -369,34 +377,39 @@ body {
   justify-content: center;
   align-items: center;
 
+  line-height: normal;
   text-decoration: none;
   text-align: left;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 16px;
   color: #ab3f4f;
   padding: 12px 0 12px 0;
+}
+.category-opt__link:hover {
+  font-weight: 500;
 }
 /* END CATEGORIES STYLE */
 
 /* FLASH SALE SALE */
 .flashSale-wrapper {
-  margin-top: 28px;
+  margin-top: 40px;
 }
 .flashSale-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 0.5;
 }
 .flashSale-header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 36px;
+  gap: 48px;
 }
 .flashSale-head-text {
   text-transform: uppercase;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 600;
   color: #ab3f4f;
   user-select: none;
 }
@@ -405,7 +418,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  gap: 12px;
+  gap: 10px;
 }
 .flashSale-timeon-hour,
 .flashSale-timeon-minute,
@@ -414,11 +427,11 @@ body {
   justify-content: center;
   align-items: center;
 
-  border-radius: 4px;
-  padding: 0 10px 0 12px;
+  border-radius: 6px;
+  line-height: 1;
+  padding: 4px 8px;
   background: linear-gradient(to top, #ab3f4f, #f491a3);
 
-  letter-spacing: 2px;
   font-size: 20px;
   font-weight: 500;
   color: white;
@@ -432,7 +445,7 @@ body {
   font-weight: 500;
   color: #ab3f4f;
 }
-/* flashSale item  */
+/* FLASH SALE ITEM STYLE */
 .flashSale-product__list {
   list-style-type: none;
   padding: 0;
@@ -462,16 +475,17 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   background: #ab3f4f;
-  margin-bottom: 5px;
 }
 .flashSale__card-price {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+
+  line-height: 0.5;
+  margin-top: 20px;
 
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   color: black;
 }
 .flashSale__card-saled {
@@ -479,6 +493,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 5%;
+  margin-top: 20px;
 
   background: linear-gradient(to right, #ab3f4f, #f491a3);
   border-radius: 12px;
@@ -486,12 +501,12 @@ body {
   font-weight: 700;
   color: white;
 }
-/* end flashSale item */
+/* END FLASH SALE ITEM STYLE */
 /* END FLASH SALE STYLE */
 
 /* PRODUCT CONTAINER  */
 .product-wrapper {
-  margin-top: 40px;
+  margin-top: 46px;
   position: relative;
 }
 .product-wrapper-bg {
@@ -509,15 +524,15 @@ body {
   z-index: 0;
 }
 .product-filter,
-.product-container {
+.product-item-container {
   position: relative;
   z-index: 1;
 }
 .product-filter {
-  top: 40px;
+  top: 41px;
 }
-.product-container {
-  top: 72px;
+.product-item-container {
+  top: calc(41px + 30px);
 }
 
 .product-filter__list {
@@ -527,20 +542,29 @@ body {
 
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 77px;
 }
 .product-filter__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 80px;
+  min-width: 256px;
+}
+.product-filter-icon {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
 }
 .product-filter__link {
+  width: 100%;
   text-decoration: none;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid white;
   border-radius: 50px;
 
   padding: 10px 50px;
@@ -550,24 +574,16 @@ body {
   font-weight: 500;
 }
 .product-filter__link:hover {
-  text-decoration: none;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-
-  padding: 10px 50px;
+  border: 1px solid white;
   background: #ab3f4f;
   color: white;
-  font-size: 24px;
-  font-weight: 500;
 }
 
+/* PRODUCT ITEM CONTAINER STYLE */
 .product__List {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 
   list-style: none;
 
@@ -620,7 +636,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
   padding: 0;
 }
 .product-itemCard-purchase-price {
@@ -646,12 +661,10 @@ body {
   justify-content: center;
   color: #000;
 }
-/* END PRODUCT CONTAINER  */
 
 /* PAGINATION STYLE */
 .pagination {
-  margin-top: 132px;
-  margin-bottom: 40px;
+  margin-top: 66px;
   display: flex;
   justify-content: flex-end;
 }
@@ -692,3 +705,5 @@ body {
   color: white;
 }
 /* END PAGINATION STYLE */
+/* PRODUCT ITEM CONTAINER STYLE */
+/* END PRODUCT CONTAINER  */
