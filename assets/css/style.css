@@ -242,12 +242,13 @@ body {
   text-align: center;
 }
 .voucher-card-title-text {
-  padding: 10px 20px 20px 20px;
+  padding-top: 8px;
+  padding-bottom: 22px;
   display: flex;
   justify-content: center;
   text-align: center;
 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
@@ -263,14 +264,17 @@ body {
   font-size: 10px;
   line-height: 1;
   color: #fff;
+  padding-bottom: 16px;
 }
 .voucher-card-content {
   height: 100%;
-  padding: 20px;
-
-  align-items: center;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  /* line-height: 1.5px; */
+
+  gap: 1px;
 }
 .card-content-header {
   font-size: 14px;
