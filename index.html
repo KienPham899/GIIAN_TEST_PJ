@@ -10,9 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+      <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
   <body>
     <!-- HEADER  -->
@@ -58,15 +63,14 @@
               </div>
             </form>
             <div class="user-info-nav">
-              <a href="#"
-                ><img src="./assets/img/user-icon.svg" class="user-icon"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./assets/img/shopping-icon.svg"
-                  class="shopping-icon"
-              /></a>
+              <button class="btn btn-default btn-rounded mb-4 btnLogin-popup" data-toggle="modal" data-target="#modalLoginForm">
+                  <img src="./assets/img/user-icon.svg" class="user-icon" alt=""/>
+              </button>
+              <a href="#">
+                  <img src="./assets/img/shopping-icon.svg" class="shopping-icon" alt=""/>
+              </a>
             </div>
+
           </div>
         </div>
       </div>
@@ -76,6 +80,31 @@
     <!-- WRAPPER -->
     <div class="wrapper">
       <!-- BANNER -->
+        <div class="form-box login" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content login-box row">
+                    <div class="col-md-6">
+                        <h1>Đăng nhập</h1>
+                        <p>Đăng nhập để không bỏ lỡ bất kỳ nhận ưu đãi nào.</p>
+                        <h3>Đăng nhập hoặc đăng ký (miễn phí)</h3>
+                        <div class="">
+                            <div class="">
+                                <input type="email" id="defaultForm-email" class="imput-login" placeholder="SDT của bạn" required>
+                            </div>
+
+                            <div class="">
+                                <input type="password" id="defaultForm-pass" class="imput-login" placeholder="OTP" required>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-login"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <div class="banner">
         <img src="./assets/img/banner.png" class="banner-image" />
       </div>
@@ -1229,5 +1258,6 @@
     <!-- END WRAPPER -->
 
     <footer></footer>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

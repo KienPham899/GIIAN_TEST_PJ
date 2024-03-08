@@ -1,0 +1,28 @@
+.login-box {
+    padding: 20px 5px;
+    border-radius: 15px;
+}
+.imput-login {
+    padding: 27px 40px;
+    border-radius: 40px;
+    background-color: #f3f3f3;
+    border: none;
+}
+
+.img-login {
+    background-color: #ab3f4f;
+    width:100%;
+    height:695px;
+    border-radius: 8px;
+}
+
+.login-box .modal-body{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-dialog {
+    width: 80% !important;
+    margin: 30px auto;
+}
