@@ -2,11 +2,42 @@
     padding: 20px 5px;
     border-radius: 15px;
 }
+.login-box .login-body {
+    padding: 16px 0 0 0;
+}
+.paren-imput {
+    position: relative;
+}
 .imput-login {
-    padding: 27px 40px;
+    padding: 27px 40% 27px 40px;
     border-radius: 40px;
     background-color: #f3f3f3;
     border: none;
+    width: 100%;
+}
+.btn-login {
+    padding: 27px;
+    text-align: center;
+    border-radius: 40px;
+    background-color: #ab3f4f;
+    border: none;
+    width: 100%;
+    color: white;
+}
+
+.imput-form {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 16px 0;
+}
+
+.btn-in-imput {
+    position: absolute;
+    right: 40px;
+    top: 27px;
+    color: #508ff8;
+    cursor: pointer;
 }
 
 .img-login {

@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GIIAN.vn</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/custom.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-      <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/custom.css" />
-  </head>
+</head>
   <body>
     <!-- HEADER  -->
     <header class="header">
@@ -87,16 +85,21 @@
                     <div class="col-md-6">
                         <h1>Đăng nhập</h1>
                         <p>Đăng nhập để không bỏ lỡ bất kỳ nhận ưu đãi nào.</p>
-                        <h3>Đăng nhập hoặc đăng ký (miễn phí)</h3>
-                        <div class="">
-                            <div class="">
-                                <input type="email" id="defaultForm-email" class="imput-login" placeholder="SDT của bạn" required>
+                        <div class="login-body">
+                            <h3>Đăng nhập hoặc đăng ký (miễn phí)</h3>
+                            <div class="imput-form">
+                                <div class="paren-imput">
+                                    <input type="email" id="defaultForm-email" class="imput-login" placeholder="SDT của bạn" required>
+                                    <span class="btn-in-imput">Nhận mã đăng nhập</span>
+                                </div>
+                                <div class="paren-imput">
+                                    <input type="password" id="defaultForm-pass" class="imput-login" placeholder="OTP" required>
+                                    <span class="btn-in-imput">Gửi lại mã sau 60s</span>
+                                </div>
+                                <div class="paren-imput">
+                                    <button class="btn-login btn">Đăng nhập</button>
+                                </div>
                             </div>
-
-                            <div class="">
-                                <input type="password" id="defaultForm-pass" class="imput-login" placeholder="OTP" required>
-                            </div>
-
                         </div>
                     </div>
                     <div class="col-md-6">
