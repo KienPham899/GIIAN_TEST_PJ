@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GIIAN.vn</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/custom.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+</head>
   <body>
     <!-- HEADER  -->
     <header class="header">
@@ -58,15 +61,14 @@
               </div>
             </form>
             <div class="user-info-nav">
-              <a href="#"
-                ><img src="./assets/img/user-icon.svg" class="user-icon"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./assets/img/shopping-icon.svg"
-                  class="shopping-icon"
-              /></a>
+              <button class="btn btn-default btn-rounded mb-4 btnLogin-popup" data-toggle="modal" data-target="#modalLoginForm">
+                  <img src="./assets/img/user-icon.svg" class="user-icon" alt=""/>
+              </button>
+              <a href="#">
+                  <img src="./assets/img/shopping-icon.svg" class="shopping-icon" alt=""/>
+              </a>
             </div>
+
           </div>
         </div>
       </div>
@@ -75,10 +77,38 @@
 
     <!-- WRAPPER -->
     <div class="wrapper">
-      <!-- BANNER-->
-      <div class="banner">
-        <img src="./assets/img/banner.png" class="banner-image" />
-      </div>
+
+      <!-- BANNER -->
+        <div class="form-box login" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content login-box row">
+                    <div class="col-md-6">
+                        <h1>Đăng nhập</h1>
+                        <p>Đăng nhập để không bỏ lỡ bất kỳ nhận ưu đãi nào.</p>
+                        <div class="login-body">
+                            <h3>Đăng nhập hoặc đăng ký (miễn phí)</h3>
+                            <div class="imput-form">
+                                <div class="paren-imput">
+                                    <input type="email" id="defaultForm-email" class="imput-login" placeholder="SDT của bạn" required>
+                                    <span class="btn-in-imput">Nhận mã đăng nhập</span>
+                                </div>
+                                <div class="paren-imput">
+                                    <input type="password" id="defaultForm-pass" class="imput-login" placeholder="OTP" required>
+                                    <span class="btn-in-imput">Gửi lại mã sau 60s</span>
+                                </div>
+                                <div class="paren-imput">
+                                    <button class="btn-login btn">Đăng nhập</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-login"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <!-- END BANNER-->
 
       <!-- OPTION UP SALE-->
